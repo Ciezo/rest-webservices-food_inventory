@@ -1,0 +1,14 @@
+1659565650970	Delete element
+1659617883878	Move compilation unit
+1659617929918	Rename type 'ProductResourcce'
+1659629284346	Delete element
+1659633921202	Move compilation unit
+1659633928157	Move compilation unit
+1659634026832	Move compilation unit
+1659634033711	Move compilation unit
+1659637438507	Encapsulate field 'item_code'
+1659638907808	Delete elements
+1659645355017	Delete element
+1659690116401	Encapsulate field 'product_code_at_cart'
+1659690121492	Encapsulate field 'product_name'
+1659690125484	Encapsulate field 'price'

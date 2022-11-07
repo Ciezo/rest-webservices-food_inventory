@@ -1,0 +1,27 @@
+// We need to create an instance so we can fetch it with a resource
+	private static ProductDAO instance;
+	// Create a static listing
+	private static List<Product> data = new ArrayList<>();
+	// Fetch the inventory contents of the database, Product_tbl and assign it here
+	private static resource.Product[] product_obj_arr; 
+	// Finally, recreate another instance of a Product object to be assigned to the data as an Array List
+	private static Product product; 
+	
+	private ProductDAO() {
+		String URL = "jdbc:postgresql://ec2-18-214-35-70.compute-1.amazonaws.com:5432/d5oktcpujqqcse"; 
+		String username = "lemzyextdjbmcj"; 
+		String password = "8da3716509fdd2d9e072ec173129a64342f9539bb1e8260f58a07d91bf135c07";
+		try {
+			// Driver set-up and initialization 
+			DriverManager.registerDriver(new org.postgresql.Driver());
+			// Establish the connection
+			conn = DriverManager.getConnection(URL, username, password);
+		}
+		
+		catch (SQLException e) {
+			System.out.println("An error occured!");
+			e.printStackTrace();
+			System.out.println(e.getMessage()); 
+		}
+		
+	}
